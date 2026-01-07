@@ -1,17 +1,27 @@
+# Rust build artifacts
 /target/
 *.pdb
 *.rs.bk
 
+# Generated bindings
 /bindings/
 
+# macOS
 .DS_Store
 *.swp
 *.swo
 *~
 
+# Xcode - ignore everything except what we need
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
 *.xcworkspace/*
 !*.xcworkspace/contents.xcworkspacedata
 !*.xcworkspace/xcshareddata/
+**/xcuserdata/
+**/*.xcuserstate
+**/DerivedData/
+
+# Generated dylib
+**/libferrix_uniffi.dylib
