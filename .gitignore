@@ -1,0 +1,16 @@
+/target/
+**/*.rs.bk
+*.pdb
+
+/bindings/
+
+.DS_Store
+*.swp
+*.swo
+*~
+
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
