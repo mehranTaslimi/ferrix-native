@@ -1,6 +1,6 @@
 /target/
-**/*.rs.bk
 *.pdb
+*.rs.bk
 
 /bindings/
 
@@ -14,3 +14,4 @@
 !*.xcodeproj/xcshareddata/
 *.xcworkspace/*
 !*.xcworkspace/contents.xcworkspacedata
+!*.xcworkspace/xcshareddata/
