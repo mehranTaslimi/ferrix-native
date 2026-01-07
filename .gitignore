@@ -1,27 +1,43 @@
-# Rust build artifacts
 /target/
+**/*.rs.bk
 *.pdb
-*.rs.bk
-
-# Generated bindings
 /bindings/
-
-# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+.Trashes
+._*
 *.swp
 *.swo
 *~
 
-# Xcode - ignore everything except what we need
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
+**/DerivedData/
+**/build/
+
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+**/xcuserdata/
+**/*.xcuserstate
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.moved-aside
+*.xccheckout
+
 *.xcworkspace/*
 !*.xcworkspace/contents.xcworkspacedata
 !*.xcworkspace/xcshareddata/
-**/xcuserdata/
-**/*.xcuserstate
-**/DerivedData/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
 
-# Generated dylib
-**/libferrix_uniffi.dylib
+Pods/
+Podfile.lock
+
+.build/
+.swiftpm/
+
+apps/macos/Ferrix/**/*.dylib
